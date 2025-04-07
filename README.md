@@ -5,7 +5,6 @@
 - [MongoDB Atlas Docs](https://www.mongodb.com/docs/atlas/)
 - [Mongoose Official Docs](https://mongoosejs.com/docs/guide.html)
 - [Express.js Routing](https://expressjs.com/en/guide/routing.html)
-- [Dotenv for Environment Variables](https://www.npmjs.com/package/dotenv)
 - [CORS Middleware in Express](https://expressjs.com/en/resources/middleware/cors.html)
 - [JWT (jsonwebtoken) Basics](https://www.npmjs.com/package/jsonwebtoken)
 - [Bcrypt for Password Hashing](https://www.npmjs.com/package/bcryptjs)
