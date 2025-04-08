@@ -75,7 +75,7 @@ npm start
 ### 5. Open the stopwatch UI (from public/stopwatch)
 Run using Live Server in VS Code or open index.html directly.
 
---
+---
 
 ## 📌 Status
 ✅ Backend complete
@@ -84,17 +84,17 @@ Run using Live Server in VS Code or open index.html directly.
 🛠️ Frontend dashboard with charts (in progress)
 🚀 Deployment planned (Render / GitHub Pages)
 
---
+---
 
 ## 🧠 Author Notes
 Started as a stopwatch prototype, now grown into a full-stack analytics & gamification platform. Ideal for students, roommates, or families who want to stay productive with fun competition.
 
---
+---
 
 ## 📬 Contact
 If you're a recruiter or developer and want to collaborate or offer feedback, feel free to reach out!
 
-
+--
 
 ## 📚 References & Resources
 
