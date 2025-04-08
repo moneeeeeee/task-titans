@@ -64,28 +64,34 @@ git clone https://github.com/yourname/task-titans-backend.git
 cd task-titans-backend
 npm install
 
-###3. Create a .env file
+### 3. Create a .env file
 PORT=5000
 MONGO_URI=your_mongo_connection_string
 JWT_SECRET=your_jwt_secret_key
 
-###4. Run server
+### 4. Run server
 npm start
 
-###5. Open the stopwatch UI (from public/stopwatch)
+### 5. Open the stopwatch UI (from public/stopwatch)
 Run using Live Server in VS Code or open index.html directly.
 
-##📌 Status
+--
+
+## 📌 Status
 ✅ Backend complete
 ✅ Daily & private analytics
 ✅ Stopwatch + frontend log integration
 🛠️ Frontend dashboard with charts (in progress)
 🚀 Deployment planned (Render / GitHub Pages)
 
-##🧠 Author Notes
+--
+
+## 🧠 Author Notes
 Started as a stopwatch prototype, now grown into a full-stack analytics & gamification platform. Ideal for students, roommates, or families who want to stay productive with fun competition.
 
-##📬 Contact
+--
+
+## 📬 Contact
 If you're a recruiter or developer and want to collaborate or offer feedback, feel free to reach out!
 
 
