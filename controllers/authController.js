@@ -1,21 +1,45 @@
 const User = require("../models/User");
+const Group = require("../models/Group");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 exports.signup = async (req, res) => {
   try {
     const { username, email, password } = req.body;
-    const existing = await User.findOne({ email });
-    if (existing) return res.status(400).json({ message: "User already exists" });
+
+    // Check if user already exists
+    const existing = await User.findOne({
+      $or: [{ username }, { email }]
+    });
+
+    if (existing) return res.status(400).json({ message: "Username or email already exists" });
 
     const hashed = await bcrypt.hash(password, 10);
     const newUser = new User({ username, email, password: hashed });
     await newUser.save();
+    
+    //  Create a private group
+    const privateGroup = new Group({
+      name: "Private",
+      members: [newUser._id],
+      tasks: []
+    });
+    await privateGroup.save();
 
-    res.status(201).json({ message: "Signup successful!" });
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
+    // Attach private group to user's group list
+    newUser.groups.push(privateGroup._id);
+    await newUser.save();
+
+    res.status(201).json({
+      message: "User registered and Private created",
+      userId: newUser._id,
+      groupId: privateGroup._id
+    });
+
+    } catch (err) {
+      console.error("Signup Error:", err);
+      res.status(500).json({ error: err.message });
+    }
 };
 
 exports.login = async (req, res) => {
@@ -34,3 +58,5 @@ exports.login = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
+
