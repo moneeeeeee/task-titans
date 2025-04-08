@@ -94,7 +94,7 @@ Started as a stopwatch prototype, now grown into a full-stack analytics & gamifi
 ## 📬 Contact
 If you're a recruiter or developer and want to collaborate or offer feedback, feel free to reach out!
 
---
+---
 
 ## 📚 References & Resources
 
