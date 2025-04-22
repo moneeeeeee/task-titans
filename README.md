@@ -78,11 +78,11 @@ Run using Live Server in VS Code or open index.html directly.
 ---
 
 ## **Status**
-✓ Backend complete
-✓ Daily & private analytics
-✓ Stopwatch + frontend log integration
-_ Frontend dashboard with charts (in progress)
-_ Deployment planned (Render / GitHub Pages)
+✓ Backend complete  
+✓ Daily & private analytics  
+✓ Stopwatch + frontend log integration  
+_ Frontend dashboard with charts (in progress)  
+_ Deployment planned (Render / GitHub Pages)  
 
 ---
 
